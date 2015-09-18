@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C85EC38-A3EE-4234-99A6-AF6B657A1252}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApplesNBugs</RootNamespace>
+    <AssemblyName>ApplesNBugs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Konstantin\Desktop\myApp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\6_custom_icons_08.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7F23BC69C237A874EDF2AA5E211D1CFA8FB4B1AB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Snake_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dead.Designer.cs">
+      <DependentUpon>Dead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Highscore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Highscore.Designer.cs">
+      <DependentUpon>Highscore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplesNBugs.cs" />
+    <Compile Include="Playmode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playmode.Designer.cs">
+      <DependentUpon>Playmode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dead.resx">
+      <DependentUpon>Dead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Highscore.resx">
+      <DependentUpon>Highscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructions.resx">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playmode.resx">
+      <DependentUpon>Playmode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Snake_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127861923409842.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6_custom_icons_08.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127873930121348.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127873912386006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127873881516432.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127874948078204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127874989818140.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127875009700829.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127877527491477.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127877624952873.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127877835038435.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127877717153010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127878092302449.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127878271499577.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127878296089514.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127878334154131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127878357702573.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127878383515978.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127879640297940.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127879922302732.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127879961630571.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127880355218705.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882330590541.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882356399642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882371172837.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882401486050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882441138248.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882467012156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882817848458.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882840854633.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882861048350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882878543170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882930054312.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127882805092278.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127883333923858.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127883375664465.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127883495420441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_6_8213731773.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_7_2653226532.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_8_9801250189.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_10_7270411737.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_7_265322653f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_18_7420312184 - Copy %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_18_7420312184 - Copy %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_18_7420312184 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_18_7420312184.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_21_8833137851.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_24_2124416731 - Copy %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_24_2124416731 - Copy %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_24_2124416731 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_24_2124416731.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_27_3690150838.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127912666063795.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127916838511251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127916858996750.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127916879222398.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127927705461396.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127927778696338.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127927832365330.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127928081129028.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127928417113298.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127928576961850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127928639980699.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127928113196802.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127928852109994.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext127932020411314.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_5_2120935674.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext128598532081126.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext128598604312916.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext128598993022838.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext128599016797073.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext128600645679753.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext128601441180869.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext128630632577262.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooltext128630803337123.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
