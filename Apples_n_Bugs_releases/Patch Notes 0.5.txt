@@ -1,0 +1,75 @@
+Patch Notes 0.2.3 to 0.4
+
+0.3
+
+- Added +5 buff!
+- Major bug Fixes
+
+0.3.1
+
+- Added Frenzy buff!!
+- Major bug Fixes
+
+0.3.2
+
+- Added Game Mods: Normal and Hard ( Hard doubles player's speed )
+- Score label is bigger and easier to read now!
+- Minor bug Fixes
+
+0.3.3
+
+- Major bug Fixes
+- Added a 3 second delay before game starts! Cant Move, only pause
+- Lowered buff chances from 15% each to 10% each
+- Added finger mouse pointer on buttons mouseover
+- Things cant spawn in the score label anymore
+- Double Buffer enabled for smoother player movement
+
+0.4
+
+- Added Speed Up buff, which doubles speed for 3 seconds
+- Hard mode: Player speed is normal now for both normal and hard mode.
+  In hard mode, apple moves in random directions now
+
+0.4.1
+
+- Font fixed, is Ariel Regular now
+- In hard mode, bugs move left slowly now
+- Fixed: In hard mode apple stops moving when player is dead
+
+0.4.2
+
+- ScreenPanel size fixed to 650x650
+- In normal mode every 10th bug spawns moving
+
+0.4.3
+
+- Pressing Enter on the Menus now acts defaultly
+- Added Score Panel on top of Screen that holds score and pause indicator
+- Made Counter on bottom of screen bigger
+- Added version label in Main Menu for easier indication
+- Initial apple now spawns randomly also, instead, like before, in only one defined location
+
+0.4.4
+
+- Highscore form added now, best 10 player highscores on the local computer,
+  score file is saved on disk localy, its directory is made hidden
+- Option to clear Highscores and delete score file
+- Cannot minimize some forms anymore, highscore and instructions form close
+  the main menu form now and reopen it on close
+//TODO
+- Finish highscore store for hard mode
+- Apple spawns in bugs
+- Resolve things spawning in the scoreLabel
+- Need to resolve the issue of overlapping and bringtofront:
+	apple and something
+
+0.5 - Big update
+
+//TODO//
+- Migrated from Picturebox pixel movement to GDI+,
+  image movements are smoother and not choppy or laggy.
+- GDI+ also fixed the problem of CPU instability when large quantities of bugs are spawned,
+  which resulted in gaining gameflow choppiness and lagginess
+  Not so much control actions per timer tick now.
+- Application stability improved.
